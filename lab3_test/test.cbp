@@ -3,15 +3,15 @@
 #include <cassert>
 
 void
-test_ekvivalent() {
+test_odin() {
     double min = 0;
     double max = 0;
-    find_minmax({5, 5, 5}, min, max);
-    assert(min == 5);
-    assert(max == 5);
+    find_minmax({7}, min, max);
+    assert(min == 7);
+    assert(max == 7);
 }
 
 int
 main() {
-    test_ekvivalent();
+    test_odin();
 }
