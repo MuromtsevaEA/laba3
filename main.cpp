@@ -87,7 +87,7 @@ int main()
     find_minmax(numbers, min, max);
 
     const auto bins = make_histogram(numbers, bin_count, min, max);
-     show_histogram_svg(bins);
+     show_histogram_svg(bins, min , max, bin_count);
 
     return 0;
 }
