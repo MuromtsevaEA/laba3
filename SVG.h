@@ -38,7 +38,6 @@ void show_histogram_svg(const vector<size_t>& bins)
     const auto TEXT_WIDTH = 50;
     const auto BIN_HEIGHT = 30;
     const auto BLOCK_WIDTH = 10;
-    svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
     double top = 0;
     string stroke="black";
     string fill="red";

@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../MinMax.cpp" />
+		<Unit filename="../MinMax.h" />
+		<Unit filename="../SVG.h" />
+		<Unit filename="test.cbp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
