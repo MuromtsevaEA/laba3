@@ -25,8 +25,14 @@ read_input(istream& in, bool prompt) {
 
     return data;
 }
-int main()
+int main(int argc, char* argv[])
 {
+    if(argc>1)
+    {
+        for(int i=0; i<argc;i++)
+        cout<<argv[]<<endl;
+        return 0;
+    }
     curl_global_init(CURL_GLOBAL_ALL);
    const auto input=read_input(cin, true);
    const auto bins=make_histogram(input);
