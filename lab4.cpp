@@ -4,7 +4,7 @@
 #include "MinMax.h"
 #include "SVG.h"
 using namespace std;
-
+//
 
 Input
 read_input(istream& in, bool prompt) {
