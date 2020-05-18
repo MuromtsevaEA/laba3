@@ -26,7 +26,7 @@ void svg_text(double left, double baseline, string text)
      //if((((i+1)*(max-min)/bin_count)+min)!=max)
        // cout<<fixed<<setprecision(2)<<((i+1)*(max-min)/bin_count)+min<<endl;
 }
-void show_histogram_svg(const vector<size_t>& bins, double min, double max, size_t bin_count)
+void show_histogram_svg(const vector<size_t>& bins)
 {
     svg_begin(400, 300);
     svg_text(20, 20, to_string(bins[0]));
@@ -66,8 +66,6 @@ void show_histogram_svg(const vector<size_t>& bins, double min, double max, size
     {
         const double bin_width = BLOCK_WIDTH * bins[i];
         svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bins[i]));
-        if((((i+1)*(max-min)/bin_count)+min)!=max)
-        cout<<fixed<<setprecision(2)<<((i+1)*(max-min)/bin_count)+min<<endl;
         svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT,stroke,fill);
         top += BIN_HEIGHT;
     }
