@@ -13,7 +13,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="curl/include" />
 				</Compiler>
+				<Linker>
+					<Add library="libcurl.dll.a" />
+					<Add directory="curl/lib" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/lab3" prefix_auto="1" extension_auto="1" />
@@ -32,7 +37,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename=".gitignore" />
+		<Unit filename="MinMax.cpp" />
+		<Unit filename="MinMax.h" />
+		<Unit filename="MinMax.o" />
+		<Unit filename="SVG.h" />
+		<Unit filename="lab3.cbp" />
+		<Unit filename="lab4.cpp" />
+		<Unit filename="lab4.o" />
 		<Unit filename="main.cpp" />
+		<Unit filename="main.o" />
 		<Extensions>
 			<code_completion />
 			<envvars />

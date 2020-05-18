@@ -754,7 +754,7 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/MuromtsevaEA/laba3.git
    76c6b71..bce070c  master -> master
 
-10. —щздать отдельный модуль дл€ работы с svg, сделать коммит.
+10. —оздать отдельный модуль дл€ работы с svg, сделать коммит.
 
 Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
 $ git status
@@ -797,4 +797,121 @@ Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/MuromtsevaEA/laba3.git
    bce070c..a445e0b  master -> master
+
+11. ¬несла изменени€, выполнила задание варианта, ссделала коммиты
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   MinMax.cpp
+        modified:   MinMax.h
+        modified:   MinMax.o
+        modified:   main.o
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Debug/libgcc_s_dw2-1.dll
+        bin/Debug/libgcc_s_sjlj-1.dll
+        bin/Debug/libstdc++-6.dll
+        bin/Debug/marks.svg
+        bin/Debug/marks.txt
+        lab3_test/lab3_test.depend
+        lab3_test/lab3_test.layout
+        lab3_test/obj/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add MinMax.cpp
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add MinMax.h
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add MinMax.o
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add main.o
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SVG.h
+        modified:   main.cpp
+        modified:   main.o
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Debug/libgcc_s_dw2-1.dll
+        bin/Debug/libgcc_s_sjlj-1.dll
+        bin/Debug/libstdc++-6.dll
+        bin/Debug/marks.svg
+        bin/Debug/marks.txt
+        lab3_test/lab3_test.depend
+        lab3_test/lab3_test.layout
+        lab3_test/obj/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add SVG.h
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add main.cpp
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git add main.o
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SVG.h
+        modified:   main.cpp
+        modified:   main.o
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Debug/libgcc_s_dw2-1.dll
+        bin/Debug/libgcc_s_sjlj-1.dll
+        bin/Debug/libstdc++-6.dll
+        bin/Debug/marks.svg
+        bin/Debug/marks.txt
+        lab3_test/lab3_test.depend
+        lab3_test/lab3_test.layout
+        lab3_test/obj/
+
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git commit -m 'внесла изменени€ с учетом варианта'
+[master 7264b97] внесла изменени€ с учетом варианта
+ 3 files changed, 11 insertions(+), 7 deletions(-)
+ rewrite main.o (97%)
+
+Ёльвира ћ”–ќћ÷≈¬ј@elia-2001 MINGW64 ~/Desktop/proga/2cemectr/lab3 (master)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 9.24 KiB | 1.16 MiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/MuromtsevaEA/laba3.git
+   41fc9b7..7264b97  master -> master
+
 
