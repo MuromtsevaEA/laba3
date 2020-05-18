@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
-#include <cstdio>
+
 #include "MinMax.h"
 #include "SVG.h"
 using namespace std;
@@ -73,11 +73,7 @@ void show_histogram_text(vector<size_t>bins)
 
 int main()
 {
-    const char* name = "Commander Shepard";
-    int year = 2154;
-    printf("%s was born in %d.\n", name, year);
-    printf("n = %08x\n", 0x1234567);
-    return 0;
+
 
     size_t number_count;
     cerr<<"Enter the number:";
