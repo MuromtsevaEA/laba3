@@ -73,26 +73,29 @@ void show_histogram_text(vector<size_t>bins)
 
 int main()
 {
-    // printf("WinVersion  %x\n", GetVersion());
-    // printf("WinVersion  %u\n", GetVersion());
-
-DWORD mask = 0x0000ffff;
-    DWORD mask_major = 0b00000000'00000000'00000000'11111111;
-    DWORD info = GetVersion();
-    DWORD platform = info >> 16;
-    DWORD version = info & mask;
-    DWORD version_major = version & mask_major;
-    DWORD version_minor = version >> 8;
-    printf("Windows v%u.%u (build %u)",version_major,version_minor,platform );
+    char system_name[MAX_COMPUTERNAME_LENGTH + 1];
+    DWORD Size = sizeof(system_name);
+    GetComputerNameA(system_name, &Size);
+    printf("System name: %s", system_name);
+    //  printf("WinVersion  %x\n", GetVersion());
+    //  printf("WinVersion  %u\n", GetVersion());
+    /* DWORD mask = 0x0000ffff;
+     DWORD mask_major = 0b00000000'00000000'00000000'11111111;
+     DWORD info = GetVersion();
+     DWORD platform = info >> 16;
+     DWORD version = info & mask;
+     DWORD version_major = version & mask_major;
+     DWORD version_minor = version >> 8;
+     printf("Windows v%u.%u (build %u)",version_major,version_minor,platform );*/
     //printf(" Build %u", platform);
     //printf("Your platform is %u.", platform);
     //printf("Windows major version is %u.", version_major);
     //printf("Windows minor version is %u.", version_minor);
 
-   /* if ((info & 0x40000000) == 0) {
-        DWORD build = platform;
-        printf("Windows build is %u.\n", build);
-    }*/
+      /*  if ((info & 0x40000000) == 0) {
+          DWORD build = platform;
+          printf(" build %u", build);
+      }*/
 
     /*size_t number_count;
     cerr<<"Enter the number:";
