@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
-
+#include <windows.h>
 #include "MinMax.h"
 #include "SVG.h"
 using namespace std;
@@ -73,7 +73,8 @@ void show_histogram_text(vector<size_t>bins)
 
 int main()
 {
-
+     printf("WinVersion  %x\n", GetVersion());
+    printf("WinVersion  %u\n", GetVersion());
 
     size_t number_count;
     cerr<<"Enter the number:";
